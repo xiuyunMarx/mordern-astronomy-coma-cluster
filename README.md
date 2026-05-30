@@ -223,7 +223,7 @@ python3 plot_mean_fiber_ra_dec.py --z-low 0.013 --z-high 0.033
 ```
 
 3. 用初始 Coma center 运行 GMM/EM 聚类：
-
+这一步建议初始的 gmm components 数量为5, 请根据实际情况调整. coma cluster 理论上应该是一个椭圆形.
 ```bash
 python3 gmm_coma_center.py \
   --center-ra 194.746077 \
